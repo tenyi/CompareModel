@@ -192,3 +192,12 @@ cython_debug/
 #  refer to https://docs.cursor.com/context/ignore-files
 .cursorignore
 .cursorindexingignore
+
+# 設定檔，以防包含敏感資訊
+config.py
+
+# IDE/Editor specific
+# .vscode/ # Already covered by global VisualStudioCode.gitignore
+# .idea/ # Already covered by global JetBrains.gitignore
+*.swp
+*.swo
