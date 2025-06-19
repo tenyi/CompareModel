@@ -3,7 +3,7 @@
 本專案旨在提供一個 Python 工具，用於比較本地端 Ollama LLM 模型在繁體中文處理方面的能力，特別是翻譯和歸納總結。
 
 ## 功能
-- 支援比較多個 Ollama 上運行的模型 (例如 gemma, deepseek-r1, qwen3)。
+- 支援比較多個 Ollama 上運行的模型 (例如 [gemma3](https://ollama.com/library/gemma3), [DeepSeek-R1](https://ollama.com/library/deepseek-r1), [qwen3](https://ollama.com/library/qwen3)， [Breeze2](https://ollama.com/willqiu/Llama-Breeze2-8B-Instruct))。
 - 使用雲端大型語言模型 (GPT-4.1, Gemini-2.5-Flash, DeepSeek) 作為評審。
 - 針對翻譯和歸納總結能力進行評估。
 - 產生比較報告。
@@ -48,6 +48,3 @@ python main.py --input_file english_sentences.txt --task translate
 
 程式將會輸出比較報告。
 
-## 注意事項
-- `deepseek-r1` 模型在 Ollama Hub 上可能沒有直接對應的名稱，計畫中暫時使用 `deepseek-coder:6.7b` 作為替代，請根據您實際可用的 DeepSeek 模型進行調整。
-- DeepSeek 的雲端評審模型 API 資訊尚不明確，如果 DeepSeek 不提供公開評審 API，可能需要調整評審模型列表。
